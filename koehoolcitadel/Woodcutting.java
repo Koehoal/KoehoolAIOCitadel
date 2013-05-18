@@ -21,7 +21,7 @@ public class Woodcutting extends Node {
 	public boolean activate() {
 		root = SceneEntities.getNearest(ROOT_ID);
 		
-		return KoehoalCitadel.Task == "WoodCutting";
+		return KoehoalCitadel.Task.contentEquals("WoodCutting");
 		
 	}
 

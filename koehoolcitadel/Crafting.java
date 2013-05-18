@@ -18,7 +18,7 @@ public class Crafting extends Node {
 	@Override
 	public boolean activate() {
 
-		return KoehoalCitadel.Task == "Crafting";
+		return KoehoalCitadel.Task.contentEquals("Crafting");
 	}
 
 	@Override

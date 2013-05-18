@@ -40,20 +40,20 @@ public class Mining extends Node {
 	@Override
 	public boolean activate() {
 
-		return KoehoalCitadel.Task == "Mining";
+		return KoehoalCitadel.Task.contentEquals("Mining");
 	}
 
 	@Override
 	public void execute() {
 		KoehoalCitadel.Status = "Mining";
 		
-		if(KoehoalCitadel.Resource == "Stone"){
+		if(KoehoalCitadel.Resource.contentEquals("Stone")){
 			Mine(STONE_IDs);
 			
-		}else if(KoehoalCitadel.Resource == "Ore"){
+		}else if(KoehoalCitadel.Resource.contentEquals("Ore")){
 			Mine(ORE_IDs);
 			
-		}else if(KoehoalCitadel.Resource == "Precious Ore"){
+		}else if(KoehoalCitadel.Resource.contentEquals("Precious Ore")){
 			Mine(P_ORE_IDs);
 			
 		}

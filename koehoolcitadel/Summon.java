@@ -17,7 +17,7 @@ public class Summon extends Node {
 	@Override
 	public boolean activate() {
 		obelisk = SceneEntities.getNearest(OBELISK);
-		return obelisk != null && KoehoalCitadel.Task == "Summoning";
+		return obelisk != null && KoehoalCitadel.Task.contentEquals("Summoning");
 	}
 
 	@Override
